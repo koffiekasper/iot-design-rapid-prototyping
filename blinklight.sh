@@ -1,3 +1,7 @@
+#!/bin/bash
+# For this script to work, make sure the LED is connected to GPIO pin 21
+
+
 if [ ! -d /sys/class/gpio/gpio21/ ]
 then
 	echo "21" > /sys/class/gpio/export
