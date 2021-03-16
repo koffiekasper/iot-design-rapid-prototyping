@@ -3,8 +3,8 @@
 record_photos () {
 	for i in {1..$1};
 	do
-		filename="./images/$2.jpg" 
-		fswebcam $filename
+		filename="/home/pi/shared/iot_design_rapid_prototyping/images/$2.jpg" 
+		fswebcam -r 1920x1080 $filename
 	done
 }
 
